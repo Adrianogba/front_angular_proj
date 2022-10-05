@@ -1,0 +1,12 @@
+<div class="container row mx-auto text-center" style="width: 1000px;">
+  <div *ngFor="let movie of listaFilme" class="card col-4 mx-2 mt-2" style="width: 18rem;">
+    <img class="card-img-top" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{movie.poster_path}}"  alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{movie.title}}</h5>
+      <p class="card-text">{{movie.overview}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Data do Lancçamento: {{movie.release_date}}</li>
+    </ul>
+  </div>
+</div>
